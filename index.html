@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olipop | A New Kind of Soda</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="loading-active theme-dark">
+
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <h1 class="logo">OLIPOP</h1>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <p id="loadingText">Loading 0%</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-left">
+            <a href="#" class="logo">OLIPOP</a>
+        </div>
+        <div class="nav-right">
+            <a href="#product" class="nav-link active">Product</a>
+            <a href="#ingredients" class="nav-link">Ingredients</a>
+            <a href="#nutrition" class="nav-link">Nutrition</a>
+            <a href="#reviews" class="nav-link">Reviews</a>
+            <a href="#faq" class="nav-link">FAQ</a>
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
+                <span class="icon-sun">☀</span>
+                <span class="icon-moon">☾</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <canvas id="heroCanvas"></canvas>
+        
+        <div class="hero-overlay">
+            <div class="hero-text">
+                <h1 id="heroTitle">CHERRY</h1>
+                <h2 id="heroSubtitle">SODA</h2>
+                <p id="heroDesc">A modern take on a classic soda with a perfect blend of sweet and tart, full of nostalgic flavor.</p>
+                <div class="cta-group">
+                    <button class="btn btn-transparent">ADD TO</button>
+                    <button class="btn btn-solid">CART</button>
+                </div>
+            </div>
+
+            <div class="hero-center-spacer"></div>
+
+            <div class="hero-nav">
+                <div class="flavor-index" id="flavorIndex">01</div>
+                <div class="nav-controls">
+                    <button id="prevBtn" class="nav-arrow">
+                        <span class="label">PREV</span>
+                        <span class="arrow">↑</span> 
+                    </button>
+                    <div class="divider"></div>
+                    <button id="nextBtn" class="nav-arrow">
+                        <span class="label">NEXT</span>
+                        <span class="arrow">↓</span>
+                    </button>
+                    <div id="variantLoader" class="variant-loader hidden"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-icons">
+            <a href="#" aria-label="Twitter">X</a>
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Facebook">FB</a>
+        </div>
+    </section>
+
+    <!-- Product / About Section -->
+    <section id="product" class="content-section">
+        <div class="container">
+            <h2>About the Drink</h2>
+            <p>Olipop is a new kind of soda that supports digestive health. We've spent years crafting a drink that's as healthy for you as it is delicious.</p>
+            <div id="ctaImageContainer" class="cta-image-wrapper">
+                <!-- Image will be injected here or via CSS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients Section -->
+    <section id="ingredients" class="content-section">
+        <div class="container">
+            <h2>Ingredients & Benefits</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Plant Fiber</h3>
+                    <p>Each can contains 9g of dietary fiber to support your gut.</p>
+                </div>
+                <div class="card">
+                    <h3>Prebiotics</h3>
+                    <p>Designed to feed the beneficial bacteria in your microbiome.</p>
+                </div>
+                <div class="card">
+                    <h3>Botanicals</h3>
+                    <p>Made with real ingredients like cassava root, marshmallow root, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutrition Section -->
+    <section id="nutrition" class="content-section">
+        <div class="container">
+            <h2>Nutrition Facts</h2>
+            <div class="nutrition-label">
+                <div class="nutrition-header">Nutrition Facts</div>
+                <div class="nutrition-row"><span>Calories</span> <span>35</span></div>
+                <div class="nutrition-row"><span>Total Carbohydrate</span> <span>13g</span></div>
+                <div class="nutrition-row indent">Dietary Fiber</div> <span>9g</span></div>
+                <div class="nutrition-row indent">Total Sugars</div> <span>2g</span></div>
+                <div class="nutrition-row"><span>Protein</span> <span>0g</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="content-section">
+        <div class="container">
+            <h2>Reviews</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Ideally sweet and tart. My favorite flavor!"</p>
+                    <span>- Sarah L.</span>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"I can't believe this is healthy. It tastes amazing."</p>
+                    <span>- Mike T.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="content-section">
+        <div class="container">
+            <h2>FAQ</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">Is Olipop vegan?</button>
+                    <div class="accordion-content">Yes, all of our products are vegan and gluten-free.</div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Does it contain caffeine?</button>
+                    <div class="accordion-content">Most flavors are caffeine-free, except for Vintage Cola and Cherry Cola.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <h2>Ready to Sip?</h2>
+        <button class="btn btn-solid large">SHOP ALL FLAVORS</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">OLIPOP</div>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
